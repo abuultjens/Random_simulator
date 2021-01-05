@@ -1,5 +1,5 @@
 # Random_simulator
-Simulates the associations of the features against random reshuffles of the target variable to generate a null distribution. This is useful for assessing how well the features associate with the actual labels compared to the expectation of random noise (make a false discovery assesment). These scripts are designed to be run on the Spartan High Performance Compute at The University of Melbourne. Thery can also be used on any other system with little modification. 
+Simulates the associations of the features in a data matrix against random reshuffles of the data labels to generate a null distribution. This is useful for assessing how well the features associate with the actual labels compared to associations achieved under the expectation of random noise (false discovery assesment). These scripts are designed to be run on the Spartan High Performance Compute at The University of Melbourne and can also be used on other systems with little modification. 
 
 # There are five main scripts (and three helper scripts)
 
