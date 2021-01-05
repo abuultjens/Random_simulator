@@ -40,7 +40,8 @@ module load python-dateutil/2.6.1-goolf-2015a-Python-2.7.12
 
 TARGET=${1}
 DATA=${2}
-OUTFILE=${3}
+TOP_N=${3}
+OUTFILE=${4}
 
 # calc p-val list
 python /home/abuultjens/scripts/pearsonR-PVAL.py \
@@ -49,7 +50,7 @@ python /home/abuultjens/scripts/pearsonR-PVAL.py \
 	ACTUAL_P_VAL.csv
 
 # getting top 5000 p-val
-tail -n +2 ACTUAL_P_VAL.csv | sort -n | head -5000 > ACTUAL_P_VAL_TOP.csv
+tail -n +2 ACTUAL_P_VAL.csv | sort -n | head -${TOP_N} > ACTUAL_P_VAL_TOP.csv
 
 # log p-values
 python log.py \
