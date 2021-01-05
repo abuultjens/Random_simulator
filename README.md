@@ -48,7 +48,7 @@ Combines the n many random simulations
 ``[outfile]`` name for the combined random simulation log(10) p-values file  
 
 ## random_simulator_plotter.py
-Generates a 2-dim histogram plot comparing the top n log(10) p-values of the features against random reshuffles of the actual labels against that obtained using the actual lables. This is best run on your local machine and not on Spartan. 
+Generates a 2-dim histogram plot comparing the top n log(10) p-values of the features against random reshuffles of the actual labels against that obtained using the actual lables. This is best run on your local machine and not on Spartan.  
 ``python3 random_simulator_plotter.py \``  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[rand_sim_log_p-values.csv] \``  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[actual_log_p-values.csv] \``  
