@@ -49,12 +49,12 @@ TOP_N=${5}
 for REP in $(cat ${REP_FILE}); do
 
 	# make rand target file
-	python randomise_target/randomise_target.py \
+	python ./randomise_target.py \
 		${TARGET} \
 		${RAND}_${REP}_TARGET.csv
 
 	# calc p-val list
-	python /home/abuultjens/scripts/pearsonR-PVAL.py \
+	python ./pearsonR-PVAL.py \
 		${RAND}_${REP}_TARGET.csv \
 		${DATA} \
 		${RAND}_${REP}_P_VAL.csv
@@ -63,7 +63,7 @@ for REP in $(cat ${REP_FILE}); do
 	tail -n +2 ${RAND}_${REP}_P_VAL.csv | sort -n | head -${TOP_N} > ${RAND}_${REP}_P_VAL_TOP.csv
 
 	# log p-values
-        python log.py \
+        python ./log.py \
         	${RAND}_${REP}_P_VAL_TOP.csv \
         	${RAND}_${REP}_P_VAL_TOP_LOG.csv
 
