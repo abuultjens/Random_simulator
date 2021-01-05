@@ -8,7 +8,7 @@ Simulates the associations of the features in a data matrix against random reshu
 ``sbatch ACTUAL.slurm``
 
 ## random_simulator_runner.sh
-Launches the jobs for n replicates  
+Configures run parameters and launches the jobs for n replicates  
 ``sh random_simulator_runner.sh \``  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[target.csv] \``  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``  [data.csv] \``  
