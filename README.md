@@ -27,7 +27,14 @@ Combines the n many random simulations
 
 ## random_simulator_plotter.py
 Generates a 2-dim histogram plot comparing the top n log(10) p-values of the features against random reshuffles of the actual labels against that obtained using the actual lables.  
-``python3 random_simulator_plotter.py``  
+``python3 random_simulator_plotter.py [rand_sim_log_p-values.csv] [actual_log_p-values.csv] [main_title] [title] [x_label] [y_label] [outfile]``  
+``[rand_sim_log_p-values.csv]`` file of top log(10) p-values from random simulations
+``[actual_log_p-values.csv]`` file of top log(10) p-values from actual labels
+``[main_title]`` main title of plot
+``[title]`` title of plot
+``[x_label]`` text for plot x label
+``[y_label]`` text for plot y label
+``[outfile]`` outfile name
 
 # Helper scripts
 
