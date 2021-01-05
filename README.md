@@ -21,5 +21,5 @@ Combines the n many random simulations
 
 # random_simulator_plotter.py
 ``python3 random_simulator_plotter.py``
-Generates a 2-dim histogram plot
+Generates a 2-dim histogram plot comparing the the top n log(10) p-values of the features against random reshuffles of the actual labels against that obtained using the actual lables.
 
