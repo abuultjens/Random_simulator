@@ -72,16 +72,16 @@ Generates a 2-dim histogram plot comparing the top n log(10) p-values of the fea
   
 # Helper scripts
 
-## randomise_target.py (helper script)
-####
-``python3 randomise_target.py``
+## randomise_target.py (helper script)  
+Randomly reshuffles the data labels and generates an outfile  
+``python3 randomise_target.py``  
 
-## pearsonR-PVAL.py (helper script)
-### 
-``python3 pearsonR-PVAL.py``
+## pearsonR-PVAL.py (helper script)  
+Calculates the pearson correlation of the features against the labels file and generates an outfile  
+``python3 pearsonR-PVAL.py``  
 
-## log.py (helper script)
-###
-``python3 log.py``
+## log.py (helper script)  
+Calculates the log(10) of the input p-values and generates an outfile  
+``python3 log.py``  
 
 
