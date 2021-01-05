@@ -57,6 +57,9 @@ Generates a 2-dim histogram plot comparing the top n log(10) p-values of the fea
 ``[x_label]`` text for plot x label  
 ``[y_label]`` text for plot y label  
 ``[outfile]`` outfile name  
+
+### Example
+![Image description](https://github.com/abuultjens/normalise/blob/master/Screen%20Shot%202020-02-28%20at%202.24.55%20pm.png)
   
 # Helper scripts
 
