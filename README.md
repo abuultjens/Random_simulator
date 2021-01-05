@@ -10,11 +10,11 @@ Simulates the associations of the features in a data matrix against random reshu
 ## random_simulator_runner.sh
 Launches the jobs for n replicates  
 ``sh random_simulator_runner.sh \``  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[target.csv] \``  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``  [data.csv] \``  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``  [start-rep] \``  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``  [end-rep] \``  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``  [top-n]``  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[target.csv] \``  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``  [data.csv] \``  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``  [start-rep] \``  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``  [end-rep] \``  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``  [top-n]``  
 ``target.csv`` file of data labels  
 ``data.csv`` file of features  
 ``start-rep`` number of the starting replicate  
@@ -28,11 +28,20 @@ Generates the top n log(10) p-values of the features against random reshuffles o
 
 ## random_simulator_combiner.sh
 Combines the n many random simulations  
-``sh random_simulator_combiner.sh [run_ID] [outfile]``  
+``sh random_simulator_combiner.sh \``
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[run_ID] \``
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[outfile]``  
 
 ## random_simulator_plotter.py
 Generates a 2-dim histogram plot comparing the top n log(10) p-values of the features against random reshuffles of the actual labels against that obtained using the actual lables.  
-``python3 random_simulator_plotter.py [rand_sim_log_p-values.csv] [actual_log_p-values.csv] [main_title] [title] [x_label] [y_label] [outfile]``  
+``python3 random_simulator_plotter.py \``
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[rand_sim_log_p-values.csv] \``
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[actual_log_p-values.csv] \``
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[main_title] \``
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[title] \``
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[x_label] \``
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[y_label] \``
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[outfile]``  
 ``[rand_sim_log_p-values.csv]`` file of top log(10) p-values from random simulations  
 ``[actual_log_p-values.csv]`` file of top log(10) p-values from actual labels  
 ``[main_title]`` main title of plot  
