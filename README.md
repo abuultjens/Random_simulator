@@ -65,7 +65,7 @@ Generates a 2-dim histogram plot comparing the top n log(10) p-values of the fea
 ``[title]`` title of plot  
 ``[x_label]`` text for plot x label  
 ``[y_label]`` text for plot y label  
-``[outfile]`` outfile name  
+``[outfile]`` outfile name (Eg. plot.png)  
 
 ### Example
 ![Image description](https://github.com/abuultjens/Random_simulator/blob/main/33-ST17_1000-LOG.png)
