@@ -59,7 +59,7 @@ Generates a 2-dim histogram plot comparing the top n log(10) p-values of the fea
 ``[outfile]`` outfile name  
 
 ### Example
-![Image description](https://github.com/abuultjens/normalise/blob/master/Screen%20Shot%202020-02-28%20at%202.24.55%20pm.png)
+![Image description](https://github.com/abuultjens/Random_simulator/blob/main/33-ST17_1000-LOG.png)
   
 # Helper scripts
 
