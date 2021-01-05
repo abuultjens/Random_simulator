@@ -9,7 +9,7 @@ Simulates the associations of the features against random reshuffles of the targ
 
 ## random_simulator_runner.sh
 ##### Launches the jobs for n replicates
-``sh random_simulator_runner.sh``
+``sh random_simulator_runner.sh [target.csv] [data.csv] [start-rep] [end-rep] [top-n]``
 
 ## random_simulator.slurm
 ##### Generates the top n log(10) p-values of the features against random reshuffles of the labels using pearson correlation.
@@ -17,7 +17,7 @@ Simulates the associations of the features against random reshuffles of the targ
 
 ## random_simulator_combiner.sh
 ##### Combines the n many random simulations
-``sh random_simulator_combiner.sh``
+``sh random_simulator_combiner.sh [run_ID] [outfile]``
 
 ## random_simulator_plotter.py
 ##### Generates a 2-dim histogram plot comparing the top n log(10) p-values of the features against random reshuffles of the actual labels against that obtained using the actual lables.
