@@ -3,9 +3,19 @@ Simulates the associations of the features in a data matrix against random reshu
 
 # There are five main scripts (and three helper scripts)
 
-## actual.slurm
-##### Generates the top n log(10) p-values of the features against the actual lables using pearson correlation.
-``sbatch actual.slurm``
+## actual.slurm  
+##### Generates the top n log(10) p-values of the features against the actual lables using pearson correlation.  
+``sbatch actual.slurm \``  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[target.csv] \``  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[data.csv] \``  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[top-n] \``  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[outfile] \``  
+
+##### arguments: 
+``target.csv`` file of data labels  
+``data.csv`` file of features  
+``top-n`` number of top p-values to include in analysis  
+``outfile`` name for outfile of actual log(10) p-values 
 
 ## random_simulator_runner.sh
 Configures run parameters and launches the jobs for n replicates  
@@ -22,7 +32,6 @@ Configures run parameters and launches the jobs for n replicates
 ``start-rep`` number of the starting replicate  
 ``end-rep`` number of the ending replicate  
 ``top-n`` number of top p-values to include in analysis  
-
 
 ## random_simulator.slurm
 Generates the top n log(10) p-values of the features against random reshuffles of the labels using pearson correlation. This is run by ``random_simulator_runner.sh``.  
