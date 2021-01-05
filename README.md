@@ -9,7 +9,12 @@ Simulates the associations of the features in a data matrix against random reshu
 
 ## random_simulator_runner.sh
 Launches the jobs for n replicates  
-``sh random_simulator_runner.sh [target.csv] [data.csv] [start-rep] [end-rep] [top-n]``  
+``sh random_simulator_runner.sh \
+  [target.csv] \
+  [data.csv] \
+  [start-rep] \
+  [end-rep] \
+  [top-n]``  
 ``target.csv`` file of data labels  
 ``data.csv`` file of features  
 ``start-rep`` number of the starting replicate  
