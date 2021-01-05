@@ -3,9 +3,9 @@ Simulates the associations of the features in a data matrix against random reshu
 
 # There are five main scripts (and three helper scripts)
 
-## ACTUAL.slurm
+## actual.slurm
 ##### Generates the top n log(10) p-values of the features against the actual lables using pearson correlation.
-``sbatch ACTUAL.slurm``
+``sbatch actual.slurm``
 
 ## random_simulator_runner.sh
 Configures run parameters and launches the jobs for n replicates  
