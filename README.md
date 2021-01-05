@@ -25,7 +25,7 @@ Configures run parameters and launches the jobs for n replicates
 
 
 ## random_simulator.slurm
-Generates the top n log(10) p-values of the features against random reshuffles of the labels using pearson correlation. This is run by ``random_simulator_runner.sh``.
+Generates the top n log(10) p-values of the features against random reshuffles of the labels using pearson correlation. This is run by ``random_simulator_runner.sh``.  
 ``sbatch random_simulator.slurm``
 
 ## random_simulator_combiner.sh
