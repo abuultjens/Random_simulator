@@ -14,7 +14,9 @@ Launches the jobs for n replicates
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``  [data.csv] \``  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``  [start-rep] \``  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``  [end-rep] \``  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``  [top-n]``  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``  [top-n]`` 
+
+##### arguments:  
 ``target.csv`` file of data labels  
 ``data.csv`` file of features  
 ``start-rep`` number of the starting replicate  
@@ -28,9 +30,13 @@ Generates the top n log(10) p-values of the features against random reshuffles o
 
 ## random_simulator_combiner.sh
 Combines the n many random simulations  
-``sh random_simulator_combiner.sh \``
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[run_ID] \``
+``sh random_simulator_combiner.sh \``  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[run_ID] \``  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[outfile]``  
+
+##### arguments:  
+``[run_ID]`` specific prefix used for the run  
+``[outfile]`` name for the combined random simulation log(10) p-values file  
 
 ## random_simulator_plotter.py
 Generates a 2-dim histogram plot comparing the top n log(10) p-values of the features against random reshuffles of the actual labels against that obtained using the actual lables.  
@@ -42,6 +48,8 @@ Generates a 2-dim histogram plot comparing the top n log(10) p-values of the fea
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[x_label] \``  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[y_label] \``  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[outfile]``  
+
+##### arguments:  
 ``[rand_sim_log_p-values.csv]`` file of top log(10) p-values from random simulations  
 ``[actual_log_p-values.csv]`` file of top log(10) p-values from actual labels  
 ``[main_title]`` main title of plot  
