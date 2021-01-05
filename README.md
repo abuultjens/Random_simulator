@@ -3,23 +3,24 @@ Simulates the associations of the features against random reshuffles of the targ
 
 # There are five scripts
 
-# ACTUAL.slurm
+## ACTUAL.slurm
+### Generates the top n log(10) p-values of the features against the actual lables.
 ``sbatch ACTUAL.slurm``
-Generates the top n log(10) p-values of the features against the actual lables.
 
-# random_simulator_runner.sh
+## random_simulator_runner.sh
+### Launches the jobs for n replicates
 ``sh random_simulator_runner.sh``
-Launches the jobs for n replicates
 
-# random_simulator.slurm
+## random_simulator.slurm
+### Generates the top n log(10) p-values of the features against random reshuffles of the actual labels
 ``sbatch random_simulator.slurm``
-Generates the top n log(10) p-values of the features against random reshuffles of the actual labels
 
-# random_simulator_combiner.sh
+## random_simulator_combiner.sh
+### Combines the n many random simulations
 ``sh random_simulator_combiner.sh``
-Combines the n many random simulations
 
-# random_simulator_plotter.py
+## random_simulator_plotter.py
+### Generates a 2-dim histogram plot comparing the top n log(10) p-values of the features against random reshuffles of the actual labels against that obtained using the actual lables.
 ``python3 random_simulator_plotter.py``
-Generates a 2-dim histogram plot comparing the top n log(10) p-values of the features against random reshuffles of the actual labels against that obtained using the actual lables.
+
 
