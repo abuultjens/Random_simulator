@@ -74,4 +74,5 @@ done
 
 #rm ${RAND}_${REP}_P_VAL.csv
 rm ${RAND}_${REP}_P_VAL_TOP.csv
+rm ${REP_FILE}
 
