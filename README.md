@@ -1,10 +1,10 @@
 # Random_simulator
-Simulates the associations of the features in a data matrix against random reshuffles of the data labels to generate a null distribution. This is useful for assessing how well the features associate with the actual labels compared to associations achieved under the expectation of random noise (false discovery assesment). These scripts are designed to be run on the Spartan High Performance Compute at The University of Melbourne and can also be used on other systems with little modification. 
+All datasets contain a component of noise that will associate with a given set of data labels, known as false discovery. This package simulates the associations of features in a data matrix against random reshuffles of the data labels to generate a null distribution. This is useful for assessing how well the features associate with the actual labels compared to associations achieved under the expectation of random noise (false discovery). These scripts are designed to be run on the Spartan High Performance Compute at The University of Melbourne and can also be used on other systems with little modification. 
 
 # There are five main scripts (and three helper scripts)
 
 ## actual.slurm  
-##### Generates the top n log(10) p-values of the features against the actual lables using pearson correlation.  
+##### Generates the top n log(10) p-values of the features against the actual labels using pearson correlation.  
 ``sbatch actual.slurm \``  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[target.csv] \``  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[data.csv] \``  
@@ -48,7 +48,7 @@ Combines the n many random simulations
 ``[outfile]`` name for the combined random simulation log(10) p-values file  
 
 ## random_simulator_plotter.py
-Generates a 2-dim histogram plot comparing the top n log(10) p-values of the features against random reshuffles of the actual labels against that obtained using the actual lables. This is best run on your local machine and not on Spartan.  
+Generates a 2-dim histogram plot comparing the top n log(10) p-values of the features against random reshuffles of the actual labels against that obtained using the actual labels. This is best run on your local machine and not on Spartan.  
 ``python3 random_simulator_plotter.py \``  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[rand_sim_log_p-values.csv] \``  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[actual_log_p-values.csv] \``  
@@ -69,6 +69,7 @@ Generates a 2-dim histogram plot comparing the top n log(10) p-values of the fea
 
 ### Example
 ![Image description](https://github.com/abuultjens/Random_simulator/blob/main/33-ST17_1000-LOG.png)
+In the above plot, the density of the top log(10) p-values obtained from random simulations is substantially larger than that obtained when the actual data labels are used. This suggests that the associations obtained with the actual labels are unlikely to be attributed to random noise in the dataset (non-false discovery).  
   
 # Helper scripts
 
