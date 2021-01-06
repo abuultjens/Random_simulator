@@ -4,7 +4,7 @@ All datasets contain a component of noise that will associate with a given set o
 # There are five main scripts (and three helper scripts)
 
 ## actual.slurm  
-##### Generates the top n log(10) p-values of the features against the actual labels using pearson correlation.  
+##### Generates the top n log(10) p-values of the features against the actual labels using pearson correlation (this is what the null distribution will be compared against).
 ``sbatch actual.slurm \``  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[target.csv] \``  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[data.csv] \``  
@@ -34,7 +34,7 @@ Configures run parameters and launches the jobs for n replicates
 ``top-n`` number of top p-values to include in analysis  
 
 ## random_simulator.slurm
-Generates the top n log(10) p-values of the features against random reshuffles of the labels using pearson correlation. This is run by ``random_simulator_runner.sh``.  
+Generates the top n log(10) p-values of the features against random reshuffles of the labels using pearson correlation (this generates the null distribution). This is run by ``random_simulator_runner.sh``.  
 ``sbatch random_simulator.slurm``
 
 ## random_simulator_combiner.sh
