@@ -11,7 +11,9 @@ MAIN_TITLE = sys.argv[3]
 TITLE = sys.argv[4]
 XLABEL = sys.argv[5]
 YLABEL = sys.argv[6]
-OUTFILE = sys.argv[7]
+BIN_X_SIZE = int(sys.argv[7])
+BIN_Y_SIZE = int(sys.argv[8])
+OUTFILE = sys.argv[9]
 
 data_tr = pd.read_csv(SIM_DATA, header=None, index_col=None)
 data = data_tr.transpose()
@@ -22,7 +24,7 @@ x = data_melt['variable'].values.ravel()
 y = data_melt['value'].values.ravel()
 
 # make plot with scale
-plt.hist2d(x, y, (40, 40), cmap=plt.cm.jet)
+plt.hist2d(x, y, (BIN_X_SIZE, BIN_Y_SIZE), cmap=plt.cm.jet)
 plt.colorbar()
 actual = pd.read_csv(ACTUAL_DATA, header=0, index_col=None)
 plt.plot(actual, color='white', linestyle='dashed')
