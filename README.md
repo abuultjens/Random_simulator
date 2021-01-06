@@ -56,6 +56,8 @@ Generates a 2-dim histogram plot comparing the top n log(10) p-values of the fea
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[title] \``  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[x_label] \``  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[y_label] \``  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[bin_x_size]``  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[bin_y_size]``  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``[outfile]``  
 
 ##### arguments:  
@@ -65,6 +67,8 @@ Generates a 2-dim histogram plot comparing the top n log(10) p-values of the fea
 ``[title]`` title of plot  
 ``[x_label]`` text for plot x label  
 ``[y_label]`` text for plot y label  
+``[bin_x_size]`` x histogram bin size  
+``[bin_y_size]`` y histogrambin size  
 ``[outfile]`` outfile name (Eg. plot.png)  
 
 ### Example
